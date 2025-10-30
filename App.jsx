@@ -1,17 +1,22 @@
 import React from 'react'
-import Loader from './Loader';
-
 
 function App() {
   return (
-    <div>
+    <>
 
-
-      <h1 style={{color:'chocolate'}}>Learn With Shumail zaidi</h1>
-      <Loader/>
-      
-    </div>
+<h1 style={{ color: 'chocolate' }}>Learn With Shumail zaidi</h1>
+<Guests guest={5}/>
+    </>
   )
 }
+const Guests=({guest})=>{
+guest=guest+1;
 
-export default App;
+return(
+
+<h1>We have {guest} guests we need {guest}  cup of tea .</h1>
+
+)
+
+}
+export default App
