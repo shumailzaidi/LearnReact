@@ -1,22 +1,15 @@
-import React from 'react'
 
-function App() {
+import './App.css'
+import AssignmentOne from './AssignmentOne';
+
+
+function App(){
+
   return (
     <>
-
-<h1 style={{ color: 'chocolate' }}>Learn With Shumail zaidi</h1>
-<Guests guest={5}/>
+    <h1 style={{color:"chocolate"}}>Learn  React (by) shumail  zaidi </h1>
+    
     </>
   )
 }
-const Guests=({guest})=>{
-guest=guest+1;
-
-return(
-
-<h1>We have {guest} guests we need {guest}  cup of tea .</h1>
-
-)
-
-}
-export default App
+export default App;
